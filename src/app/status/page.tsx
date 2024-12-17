@@ -27,7 +27,7 @@ export default function Status() {
   useEffect(() => {
     const asyncFunc = async () => {
       try {
-        let data = await getData();
+        const data = await getData();
         setUser(data);
         setLoading(false);
       } catch (error) {
